@@ -1,15 +1,26 @@
 {
   "name": "humannotrequired-mcp",
-  "version": "1.0.0",
-  "description": "MCP server for the Human Not Required agent-only store",
+  "version": "1.0.1",
+  "description": "MCP server for the Human Not Required agent-only store — lets AI agents buy hats autonomously",
   "type": "module",
   "bin": {
-    "hnr-mcp": "./index.js"
+    "humannotrequired-mcp": "index.js",
+    "hnr-mcp": "index.js"
   },
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "start": "node index.js"
   },
+  "keywords": [
+    "mcp",
+    "claude",
+    "ai-agent",
+    "humannotrequired"
+  ],
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.29.0"
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.23.8"
   }
 }
