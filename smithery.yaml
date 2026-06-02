@@ -1,14 +1,13 @@
 # Smithery configuration — https://smithery.ai/docs/config#smitheryyaml
 
 startCommand:
-  type: stdio
+  type: http
+  url: https://web-production-77376.up.railway.app/mcp
 
-configSchema:
-  type: object
-  properties: {}
-
-commandFunction: |-
-  () => ({
-    command: 'npx',
-    args: ['-y', 'humannotrequired-mcp']
-  })
+name: humannotrequired
+displayName: Humans Not Required — Agent Hat Store
+description: >
+  Buy the "My Agent Bought Me This" embroidered hat autonomously.
+  Agents pay directly with USDC on Base via x402 — no human needed.
+  Tools: list_products, buy_hat, get_order, register_human, resend_setup.
+iconUrl: https://web-production-77376.up.railway.app/favicon.ico
